@@ -1,0 +1,328 @@
+/* HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+}
+::selection {
+  background: none;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: top;
+  outline: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f60;
+}
+.anin-rapido {
+  transition: all 0.2s ease-out;
+}
+.anin-normal {
+  transition: all 0.5s ease-out;
+}
+.anin-lento {
+  transition: all 1s ease-out;
+}
+/*variables*/
+/*Prinipal*/
+body {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Share Tech', sans-serif, Helvetica, Arial;
+  font-weight: 400;
+  background: url("../img/navebn.png") no-repeat center #fff;
+  background-attachment: fixed;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+}
+#full-intro {
+  background: url("../img/naves-de-papel.png") no-repeat center #ffc800;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#full-intro header {
+  align-self: center;
+}
+#full-intro h1 {
+  font-size: 50px;
+  margin-left: -400px;
+  line-height: 50px;
+  width: 160px;
+  text-transform: uppercase;
+  border-right: solid 5px #ffb500;
+}
+nav {
+  width: 100%;
+  height: auto;
+  background: #ffb500;
+  position: fixed;
+  top: 0;
+}
+nav ul {
+  max-width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+nav li {
+  width: 20%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  list-style: none;
+}
+nav li :hover:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 8px;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top: 8px double #ffb500;
+}
+nav a.current {
+  color: #000;
+}
+nav a.current:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 8px;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top: 8px double #ffb500;
+}
+.isStuck {
+  z-index: 100;
+}
+#main-content {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.txt-box {
+  padding: 350px 0 350px 0;
+  max-width: 300px;
+}
+.txt-box h2 {
+  text-align: center;
+  font-size: 37px;
+  border-right: solid 5px #ffb500;
+}
+.txt-box p {
+  padding: 30px 0 20px 0;
+}
+.txt-box a {
+  color: #ffb500;
+}
+.box-center {
+  margin: 0 auto;
+}
+#galeria {
+  background: url("../img/naves-f.png") no-repeat center #fff;
+  background-attachment: fixed;
+}
+#descargar {
+  background: url("../img/naves.png") no-repeat center #fff;
+  background-attachment: fixed;
+}
+.box-img {
+  display: flex;
+  overflow: auto;
+}
+.box-img figure {
+  padding: 5px 15px 5px 15px;
+  text-align: center;
+}
+.box-img figure img {
+  margin: 0 30px 0 30px;
+}
+.box-img figcaption {
+  padding: 15px 0 15px 0;
+}
+.box-img a:hover {
+  opacity: 0.7;
+}
+footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+footer img {
+  width: auto/9;
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 60px;
+}
+/*Responsive Design*/
+@media screen and (max-width: 1366px) {
+  .txt-box {
+    padding: 210px 0 210px 0;
+  }
+}
+@media screen and (max-width: 920px) {
+  #full-intro h1 {
+    margin: 0 auto;
+    width: auto;
+    border: 0;
+    padding-top: 120%;
+  }
+}
+@media screen and (max-width: 40em) {
+  .js #menu {
+    display: none;
+  }
+  .js .slicknav_menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background: #fff;
+    background-attachment: scroll;
+  }
+  #full-intro {
+    background-size: 40%;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  #galeria {
+    background: none;
+    background-attachment: scroll;
+  }
+  #descargar {
+    background: none;
+    background-attachment: scroll;
+  }
+}
+@media screen and (max-width: 320px) {
+  #full-intro {
+    background-size: 50%;
+  }
+  #full-intro h1 {
+    font-size: 28px;
+  }
+}
