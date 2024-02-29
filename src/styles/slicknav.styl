@@ -1,0 +1,113 @@
+.slicknav_menu
+  display none
+  *zoom 1
+  font-size 16px
+  box-sizing border-box
+  background #ffb500
+  .slicknav_menutxt
+    display block
+    line-height 1.188em
+    float left
+    color #fff
+  .slicknav_icon
+    float left
+    width 1.125em
+    height .875em
+    margin .188em 0 0 .438em
+    &:before
+      background transparent
+      width 1.125em
+      height .875em
+      display block
+      content ""
+      position absolute
+  .slicknav_no-text
+    margin 0
+  .slicknav_icon-bar
+    display block
+    width 1.125em
+    height .125em
+    border-radius 1px
+    box-shadow 0 1px 0 rgba(0,0,0,0.25)
+    background-color #fff
+  &:before
+    content " "
+    display table
+  &:after
+    content " "
+    display table
+    clear both
+  *
+    box-sizing border-box
+
+.slicknav_btn
+  position relative
+  display block
+  vertical-align middle
+  float right
+  padding .438em .625em .438em .625em
+  line-height 1.125em
+  cursor pointer
+  margin 5px 5px 6px
+  border-radius 4px
+  background-color #f60
+  .slicknav_icon-bar
+    & + .slicknav_icon-bar
+      margin-top .188em
+
+.slicknav_nav
+  clear both
+  color #fff
+  margin 0
+  padding 0
+  font-size .875em
+  list-style none
+  overflow hidden
+  ul
+    display block
+    list-style none
+    overflow hidden
+    padding 0
+    margin 0 0 0 20px
+  li
+    display block
+  .slicknav_arrow
+    font-size .8em
+    margin 0 0 0 .4em
+  .slicknav_item
+    cursor pointer
+    a
+      display inline
+      padding 0
+      margin 0
+  .slicknav_row
+    display block
+    padding 5px 10px
+    margin 2px 5px
+    &:hover
+      border-radius 6px
+      background #ccc
+      color #fff
+  a
+    display block
+    padding 15px 10px
+    margin 2px 5px
+    text-decoration none
+    color #fff
+    &:hover
+      background #f60
+  .slicknav_parent-link
+    a
+      display inline
+      padding 0
+      margin 0
+  .slicknav_txtnode
+    margin-left 15px
+
+.slicknav_brand
+  float left
+  color #fff
+  font-size 18px
+  line-height 30px
+  padding 7px 12px
+  height 44px

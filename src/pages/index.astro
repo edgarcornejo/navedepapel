@@ -1,0 +1,198 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <input type="checkbox" id="menu" class="input-menu" />
+  <nav id="navigation-per-page">
+    <label for="menu" class="open-menu"
+      ><span class="material-symbols-outlined"> menu</span></label
+    >
+    <label for="menu" class="closed-menu"
+      ><span class="material-symbols-outlined"> close</span></label
+    >
+    <menu>
+      <li>
+        <a href="#inicio" title="Inicio" class="anin-rapido">Inicio</a>
+      </li>
+      <li>
+        <a href="#nosotros" title="Nosotros" class="anin-rapido">Nosotros</a>
+      </li>
+      <li>
+        <a href="#galeria" title="Galería" class="anin-rapido">Galería</a>
+      </li>
+      <li>
+        <a href="#descargar" title="Descargar" class="anin-rapido">Descargar</a>
+      </li>
+      <li>
+        <a href="#contacto" title="Contacto" class="anin-rapido">Contacto</a>
+      </li>
+    </menu>
+  </nav>
+
+  <section id="inicio">
+    <header>
+      <h1>
+        <a href="http://www.navedepapel.edgarcornejo.com" title="Nave de Papel"
+          >Nave de Papel</a
+        >
+      </h1>
+    </header>
+  </section>
+
+  <section id="main-content">
+    <article id="nosotros">
+      <div class="txt-box">
+        <header>
+          <h2>Nosotros</h2>
+        </header>
+
+        <p>
+          Una <strong>comunidad</strong> con la afición a las <strong
+            >Nave de Papel</strong
+          >, para compartir consejos y modelos. <br /><br />
+
+          Aquí podrás encontrar modelos de naves para <strong>descargar</strong
+          >, ya sea sin color o con color. <br /><br />
+
+          Esperamos que nos ayudes a construir esta comunidad, <strong
+            >contribuyendo y colaborando</strong
+          > con otros usuarios.
+        </p>
+      </div>
+    </article>
+
+    <article id="galeria">
+      <div class="txt-box box-center">
+        <header>
+          <h2>Galería</h2>
+        </header>
+
+        <p>
+          Fotos de algunos modelos realizados, los mejores modelos entraran
+          dentro del <strong>top 10</strong>, esperamos su fotos. <br /><br />
+
+          Si quieres enviar una fotos puedes hacerlo a través de nuestro fan
+          page oficial <a
+            href="https://www.facebook.com/navedepapeloficial/"
+            title="Nave de Papel"
+            target="_blank">Nave de Papel</a
+          > o nuestro correo: <strong>info@edgarcornejo.com</strong> con el asunto
+          Nave de Papel.
+        </p>
+      </div>
+    </article>
+
+    <article id="descargar">
+      <div class="txt-box box-center">
+        <header>
+          <h2>Descargar</h2>
+        </header>
+
+        <p>
+          Aquí puedes <strong>descargar</strong> los modelos que mas quieras, si
+          deseas un color en especial o tamaño no dudes en comentarlos. <br
+          /><br />
+
+          Recuerda que si contribuyes con in modelo te damos el <strong
+            >crédito</strong
+          > ya sea con tu nombre o nick.
+        </p>
+
+        <div class="box-img">
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0400a.png"
+              alt="modelo-color-np0400a"
+            />
+            <figcaption>modelo-color-np0400a<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0400b.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0400a" /></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0400b.png"
+              alt="modelo-color-np0400b"
+            />
+            <figcaption>modelo-color-np0400b<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0400a.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0400b" /></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0300a.png"
+              alt="modelo-color-np0300a"
+            />
+            <figcaption>modelo-color-np0300a<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0300a.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0300a" /></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0300b.png"
+              alt="modelo-color-np0300b"
+            />
+            <figcaption>modelo-color-np0300b<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0300b.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0300b" /></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0100.png"
+              alt="modelo-color-np0100"
+            />
+            <figcaption>modelo-color-np0100<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0100.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0100" /></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="/img/model/modelo-color-np0200.png"
+              alt="modelo-color-np0200"
+            />
+            <figcaption>modelo-color-np0200<br /> @devcornejo</figcaption>
+            <a href="/pdf/modelo-color-np0200.pdf" target="_blank"
+              ><img src="/img/pdf.svg" alt="modelo-color-np0200" /></a
+            >
+          </figure>
+        </div>
+
+        <p>Estamos trabajando, para que puedas descargar muchos mas modelos.</p>
+      </div>
+    </article>
+
+    <article id="contacto">
+      <div class="txt-box">
+        <header>
+          <h2>Contacto</h2>
+        </header>
+
+        <p>
+          Los únicos medios de comunicación son a través del siguiente correo o
+          nuestra fan page oficial. <br /><br />
+          - info@edgarcornejo.com<br />
+          - <a
+            href="https://www.facebook.com/navedepapeloficial/"
+            title="Nave de Papel"
+            target="_blank">Nave de Papel</a
+          >
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <img src="/img/naves-de-papel.png" alt="Nave de Papel" />
+    <p>© Nave de Papel</p>
+  </footer>
+</Layout>
