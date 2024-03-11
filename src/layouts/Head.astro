@@ -4,13 +4,17 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="author" href="/humans.txt" />
+  <link rel="icon" type="image/svg+xml" href="/fotosgratis.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png" />
   <meta name="generator" content={Astro.generator} />
 
   <title>Nave de Papel</title>
+
+  <!-- META -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
     content="Una comunidad con la afición a las Nave de Papel, para compartir consejos y modelos."
@@ -19,15 +23,27 @@
     name="keywords"
     content="Nave de Papel, comunidad, hobby, aviones de papel, ocio"
   />
+  <meta name="copyright" content="© Nave de Papel" />
+  <meta name="robots" content="Index,Follow" />
   <meta name="distribution" content="global" />
   <meta name="author" content="Edgar Cornejo" />
   <meta name="designer" content="Edgar Cornejo" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nave de Papel" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.navedepapel.edgarcornejo.com/" />
   <meta
     property="og:image"
-    content="http://www.navedepapel.edgarcornejo.com/apple-touch-icon.png"
+    content="https://www.navedepapel.edgarcornejo.com/favicon.svg"
   />
+  <meta property="og:image:alt" content="Logotipo Nave de Papel" />
+  <meta property="og:site_name" content="Nave de Papel" />
+  <meta property="og:locale" content="es_PE" />
 
+  <!-- importando fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css?family=Share+Tech"
     rel="stylesheet"
