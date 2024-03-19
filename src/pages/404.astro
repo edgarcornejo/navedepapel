@@ -1,0 +1,48 @@
+---
+/* importando layouts */
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section id="inicio">
+    <header>
+      <h1>404</h1>
+    </header>
+    <div>
+      <p>Lo sentimos, la página que quieres ver no está disponible o no existe. </p>
+      <a href="" title="Volver al inicio">Volver al inicio</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  #inicio {
+    flex-direction: column;
+    justify-content: center;
+    background-image: none;
+    height: 100vh;
+    padding: clamp(32px, 2vw, 2.1vw);
+    hyphens: none;
+    text-align: center;
+  }
+  #inicio h1 {
+    text-align: center;
+    width: auto;
+    border-right: 0;
+    margin-right: 0;
+    font-size: clamp(68px, 6vw, 6.1vw);
+  }
+  div {
+    font-size: clamp(16px, 1vw, 1.1vw);
+    margin: 0 auto;
+    line-height: 140%;
+  }
+  a {
+    border-radius: clamp(3px, 0.2vw, 0.3vw);
+    outline: solid clamp(2px, 0.2vw, 0.3vw);
+    padding: clamp(16px, 1vw, 1.1vw);
+    margin: clamp(16px, 1vw, 1.1vw);
+    text-align: center;
+    font-size: clamp(16px, 2vw, 2.1vw);
+  }
+</style>
