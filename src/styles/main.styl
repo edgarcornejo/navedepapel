@@ -1,15 +1,15 @@
-/* HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-/*variables*/
 Nwhite = #f2f2f2
 Nblack = #1a1f29
 Nyellow = #ffc800
 Norange = #FFB500
 Nred = #FF6600
 
-html
-  font-size 1em
-  line-height 1.4
-  height 100vh
+@font-face
+  font-family 'Share Tech', serif
+  font-style normal
+  font-weight 400
+  font-display swap
+  src url(/fonts/ShareTech-Regular.ttf) format('truetype')
 
 ::-moz-selection
   background none
@@ -27,10 +27,10 @@ a
 
 /*Principal*/
 body
-  width 100vW
+  width 100%
   height 100vh
   color Nblack
-  font-size 16px
+  font-size clamp(16px, 1vw, 1.1vw)
   font-family 'Share Tech',Helvetica,Arial,sans-serif
   background url("../img/navebn.png") no-repeat center Nwhite
   background-attachment fixed
@@ -40,7 +40,7 @@ body
   background url("../img/naves-de-papel.png") no-repeat center Nyellow
   background-attachment fixed
   background-size 10vw auto
-  width 100vw
+  width 100%
   height 100vh
   margin 0 auto
   display flex
@@ -48,7 +48,7 @@ body
   header
     align-self center
   h1
-    font-size 4vw
+    font-size clamp(48px, 4vw, 4.1vw)
     line-height 100%
     margin-right 26vw
     hyphens none
@@ -72,8 +72,10 @@ nav
   li
     list-style none
   a
-    font-size 1vw
+    color Nblack
     padding 1vw
+    &:hover
+      color Nwhite
   
 .input-menu,.open-menu,.closed-menu
   display none
@@ -94,11 +96,10 @@ nav
   h2
     margin-bottom 1vw
     text-align center
-    font-size 2vw
+    font-size clamp(24px, 2vw, 2.1vw)
     line-height 140%
     border-right solid 0.2vw Norange
   p
-    font-size 1vw
     line-height 120%
     hyphens none
   a
@@ -130,7 +131,6 @@ nav
     img
     	margin 1vw
   figcaption
-    font-size 1vw
     line-height 100%
     padding 1vw 0 1vw 0
   a
@@ -148,7 +148,6 @@ footer
   justify-content center
   flex-direction column
   align-items center
-  font-size 1vw
   img
     width auto/9
     padding-bottom 1vw
@@ -160,8 +159,6 @@ footer
   nav
     menu
       display none
-    a
-      font-size 1.2em
   
   .open-menu
     display flex
@@ -169,7 +166,6 @@ footer
 
   .open-menu,.closed-menu
     span
-      font-size 3em
       color Nred
   
   #menu:checked ~ nav
@@ -184,7 +180,6 @@ footer
   
   #inicio
     h1
-      font-size 2em
       width 6rem
       border-right solid 3px Norange
 
@@ -193,10 +188,7 @@ footer
     max-width 300px
     h2
       margin-bottom 1rem
-      font-size 2em
       border-right solid 3px Norange
-    p
-      font-size 1em
 
   .box-img
     margin-bottom 1rem
@@ -205,7 +197,6 @@ footer
       img
         margin 1rem
     figcaption
-      font-size 1em
       padding 1rem 0 1rem 0
     a
       img
@@ -213,7 +204,6 @@ footer
 
   footer
     padding 2rem 0 2rem 0
-    font-size 1em
     img
       padding-bottom 1rem
 
