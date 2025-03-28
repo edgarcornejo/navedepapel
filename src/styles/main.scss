@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* importando reset y variables */
+@import "reset", "variables";
+
+/* Colores */
+$Nwhite: rgb(242, 242, 242);
+$Nblack: rgb(26, 31, 41);
+$Nyellow: rgb(255, 200, 0);
+$Norange: rgb(255, 181, 0);
+$Nred: rgb(255, 102, 0);
+
+/* Fuentes tipográficas */
+@font-face {
+  font-family: 'Share Tech', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ShareTech-Regular.ttf") format('truetype');
+}
+
+/* Estilos ScrollBar */
+html {
+	scrollbar-color: $Nwhite $Norange;
+	scrollbar-width: thin;
+}
+
+/* Estilos de selección */
+::selection {
+  background: none;
+  text-shadow: none;
+}
+
+/* Enlaces */
+a {
+  color: $Nwhite;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  a:hover {
+    color: $Nred;
+  }
+}
+
+/*Principal*/
+body {
+  width: 100%;
+  height: 100vh;
+  color: $Nblack;
+  font-size: clamp(18px, 1vw, 1vw);
+  font-family: 'Share Tech', Helvetica, Arial, sans-serif;
+  background: url("../images/navebn.png") no-repeat center $Nwhite;
+  background-attachment: fixed;
+  background-size: 10vw auto;
+}
+
+#inicio {
+  background: url("../images/navedepapel.svg") no-repeat center $Nyellow;
+  background-attachment: fixed;
+  background-size: 10vw auto;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  header {
+    align-self: center;
+  }
+  h1 {
+    font-size: clamp(48px, 4vw, 4vw);
+    line-height: 1;
+    margin-right: 26vw;
+    hyphens: none;
+    width: 11vw;
+    text-transform: uppercase;
+    border-right: solid $thinline $Norange;
+  }
+}
+
+nav {
+  width: 100vw;
+  height: auto;
+  background: $Norange;
+  position: fixed;
+  top: 0;
+  menu {
+    width: 90%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    color: $Nblack;
+    display: inline-block;
+    padding: $onespace;
+    &:hover {
+      color: $Nwhite;
+    }
+  }
+}
+
+.input-menu,
+.open-menu,
+.closed-menu {
+  display: none;
+}
+
+#main-content {
+  width: 90%;
+  max-width: 1920px;
+  margin: 0 auto;
+  article {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+.txt-box {
+  padding: $onespace;
+  max-width: 18vw;
+  h2 {
+    margin-bottom: $twospace;
+    text-align: center;
+    font-size: clamp(24px, 2vw, 2vw);
+    line-height: 1.4;
+    border-right: solid $thinline $Norange;
+  }
+  p {
+    line-height: 1.2;
+    hyphens: none;
+  }
+}
+
+.box-center {
+  margin: 0 auto;
+}
+
+#galeria {
+  background: url("../images/naves-f.png") no-repeat center $Nwhite;
+  background-attachment: fixed;
+  background-size: 60vw auto;
+}
+
+#descargar {
+  background: url("../images/naves.png") no-repeat center $Nwhite;
+  background-attachment: fixed;
+  background-size: 60vw auto;
+}
+
+.box-img {
+  display: flex;
+  overflow: auto;
+  margin-bottom: $onespace;
+  figure {
+    margin: $onespace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/pdf.svg") no-repeat top left;
+    background-size: $twospace;
+  }
+  img {
+    margin: $onespace;
+  }
+  figcaption {
+    padding-block: $onespace;
+  }
+  a {
+    color: $Nwhite;
+    background-color: $Nred;
+    padding: $space;
+    border-radius: $radius;
+    &:hover {
+      background-color: $Norange;
+    }
+  }
+}
+
+footer {
+  padding-block: $twospace;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: auto/9;
+    padding-bottom: $onespace;
+    height: auto;
+    max-width: $thirdspace;
+  }
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 1024px) {
+  nav {
+    menu {
+      display: none;
+    }
+  } 
+
+  #inicio {
+    h1 {
+      width: 20vw;
+      margin-right: 40vw;
+    }
+  }
+
+  .txt-box {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  #inicio,
+  #galeria,
+  #descargar {
+    background-image: none;
+  }
+  #inicio {
+    height: auto;
+    padding: 12vh 0 10vh 0;
+  }
+  #inicio h1 {
+    margin-right: 0;
+    width: auto;
+    border: 0;
+  }
+  #main-content article {
+    height: auto;
+    padding: 6vh 0 1vh 0;
+  }
+  .txt-box {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .txt-box h2 {
+    border: 0;
+  }
+}

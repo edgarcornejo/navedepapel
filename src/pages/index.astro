@@ -1,25 +1,35 @@
 ---
+import { Image } from 'astro:assets';
+
 /* importando layouts */
 import Layout from "../layouts/Layout.astro";
+
+import localImageNaveNP0400A from '../images/model/modelo-color-np0400a.png';
+import localImageNaveNP0400B from '../images/model/modelo-color-np0400b.png';
+import localImageNaveNP0300A from '../images/model/modelo-color-np0300a.png';
+import localImageNaveNP0300B from '../images/model/modelo-color-np0300b.png';
+import localImageNaveNP0100 from '../images/model/modelo-color-np0100.png';
+import localImageNaveNP0200 from '../images/model/modelo-color-np0200.png';
+import localImageLogo from '../images/navedepapel.svg';
 ---
 
 <Layout>
   <nav id="navigation-per-page">
     <menu>
       <li>
-        <a href="#inicio" title="Inicio" class="anin-rapido">Inicio</a>
+        <a href="#inicio" title="Inicio">Inicio</a>
       </li>
       <li>
-        <a href="#nosotros" title="Nosotros" class="anin-rapido">Nosotros</a>
+        <a href="#nosotros" title="Nosotros">Nosotros</a>
       </li>
       <li>
-        <a href="#galeria" title="Galería" class="anin-rapido">Galería</a>
+        <a href="#galeria" title="Galería">Galería</a>
       </li>
       <li>
-        <a href="#descargar" title="Descargar" class="anin-rapido">Descargar</a>
+        <a href="#descargar" title="Descargar">Descargar</a>
       </li>
       <li>
-        <a href="#contacto" title="Contacto" class="anin-rapido">Contacto</a>
+        <a href="#contacto" title="Contacto">Contacto</a>
       </li>
     </menu>
   </nav>
@@ -27,7 +37,7 @@ import Layout from "../layouts/Layout.astro";
   <section id="inicio">
     <header>
       <h1>
-        <a href="http://www.navedepapel.edgarcornejo.com" title="Nave de Papel"
+        <a href="/" title="Nave de Papel"
           >Nave de Papel</a
         >
       </h1>
@@ -66,13 +76,7 @@ import Layout from "../layouts/Layout.astro";
           Fotos de algunos modelos realizados, los mejores modelos entraran
           dentro del <strong>top 10</strong>, esperamos su fotos. <br /><br />
 
-          Si quieres enviar una fotos puedes hacerlo a través de nuestro fan
-          page oficial <a
-            href="https://www.facebook.com/navedepapeloficial/"
-            title="Nave de Papel"
-            target="_blank">Nave de Papel</a
-          > o nuestro correo: <strong>info@edgarcornejo.com</strong> con el asunto
-          Nave de Papel.
+          Si quieres compartir tus modelos de nades puedes hacerlo a este correo: <strong>info@edgarcornejo.com</strong> con el asunto "Nave de Papel".
         </p>
       </div>
     </article>
@@ -95,68 +99,50 @@ import Layout from "../layouts/Layout.astro";
 
         <div class="box-img">
           <figure>
-            <img
-              src="/img/model/modelo-color-np0400a.png"
-              alt="modelo-color-np0400a"
-            />
-            <figcaption>modelo-color-np0400a<br /> @devcornejo</figcaption>
-            <a href="/pdf/modelo-color-np0400b.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0400a" /></a
-            >
+            <Image src={localImageNaveNP0400A} alt="Modelo Color np0400a" />
+            <figcaption>
+              modelo-color-np0400a<br /> @devcornejo
+            </figcaption>
+            <a href="/pdf/modelo-color-np0400b.pdf" target="_blank">Descargar</a>
           </figure>
 
           <figure>
-            <img
-              src="/img/model/modelo-color-np0400b.png"
-              alt="modelo-color-np0400b"
-            />
+            <Image src={localImageNaveNP0400B} alt="Modelo Color np0400b" />
             <figcaption>modelo-color-np0400b<br /> @devcornejo</figcaption>
             <a href="/pdf/modelo-color-np0400a.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0400b" /></a
+              >Descargar</a
             >
           </figure>
 
           <figure>
-            <img
-              src="/img/model/modelo-color-np0300a.png"
-              alt="modelo-color-np0300a"
-            />
+            <Image src={localImageNaveNP0300A} alt="Modelo Color np0300a" />
             <figcaption>modelo-color-np0300a<br /> @devcornejo</figcaption>
             <a href="/pdf/modelo-color-np0300a.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0300a" /></a
+              >Descargar</a
             >
           </figure>
 
           <figure>
-            <img
-              src="/img/model/modelo-color-np0300b.png"
-              alt="modelo-color-np0300b"
-            />
+            <Image src={localImageNaveNP0300B} alt="Modelo Color np0300b" />
             <figcaption>modelo-color-np0300b<br /> @devcornejo</figcaption>
             <a href="/pdf/modelo-color-np0300b.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0300b" /></a
+              >Descargar</a
             >
           </figure>
 
           <figure>
-            <img
-              src="/img/model/modelo-color-np0100.png"
-              alt="modelo-color-np0100"
-            />
+            <Image src={localImageNaveNP0100} alt="Modelo Color np0100" />
             <figcaption>modelo-color-np0100<br /> @devcornejo</figcaption>
             <a href="/pdf/modelo-color-np0100.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0100" /></a
+              >Descargar</a
             >
           </figure>
 
           <figure>
-            <img
-              src="/img/model/modelo-color-np0200.png"
-              alt="modelo-color-np0200"
-            />
+            <Image src={localImageNaveNP0200} alt="Modelo Color np0200" />
             <figcaption>modelo-color-np0200<br /> @devcornejo</figcaption>
             <a href="/pdf/modelo-color-np0200.pdf" target="_blank"
-              ><img src="/img/pdf.svg" alt="modelo-color-np0200" /></a
+              >Descargar</a
             >
           </figure>
         </div>
@@ -180,7 +166,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <footer>
-    <img src="/img/naves-de-papel.png" alt="Nave de Papel" />
+    <Image src={localImageLogo} alt="Logo Nave de Papel" />
     <p>© Nave de Papel</p>
   </footer>
 </Layout>
